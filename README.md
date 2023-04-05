@@ -6,51 +6,20 @@ In this project I analyzed the sales of pizza of a particular pizza brand with f
 
 # ABOUT THE DATA
 The dataset was downloaded from kaggle.com. It has four separate tables which includes; Branch table, Calendar table, Product table and Sales table.
-• The Branch table:
-This contains 3 columns and 6 rows, the columns contain;
-Branch: the city the pizza outlet is located
-Manager: the name of the outlet manager
-Country: the country the outlet is located
-• The calendar table:
+1.	The Branch table:
+This contains 3 columns and 6 rows, the columns contain; Branch, Manager and Country.
+2.	The calendar table:
 This contains only 1 column, which is the unique date an order was placed for a pizza in the year 2014.
-• The product table:
-This contains 2 columns and 17 rows, the columns contain;
-Pizza type: this is the specific type of pizza available at the outlet.
-Price: this is the unit cost of each type of pizza available at the outlet
-• The sales table:
-This contains 4 columns with 445 rows, the columns contain;
-Order number: a unique identifier of an order
-Date: the date an order was placed for a particular type of pizza
-Branch: the city the outlet is located.
-Quantity: the number of pizzas ordered.
+3.	The product table:
+This contains 2 columns and 17 rows, the columns contain; Pizza type and Price.
+4.	The sales table:
+This contains 4 columns with 445 rows, the columns contain; Order number, Date, Branch and Quantity.
+
 
 # ANALYSIS PROCESS
 I first of all saved the files containing the tables as a csv file. After which I imported it into MS-SQL as a flat file. This availed me the opportunity to extract the relevant columns that I needed from each table combined into a table.
-Here is the code I used for the extraction of the data:
-SELECT
-	sal.order_number,
-	sal.pizza_type,
-	cal.date,
-	sal.quantity,
-	pro.price,
-	pro.price * sal.quantity AS Total_Sales,
-	bra.branch,
-	bra.manager
-FROM sales sal
-JOIN calendar cal
-ON sal.date = cal.date
-JOIN product pro
-ON sal.Pizza_Type =pro.pizza
-JOIN Branch bra
-ON sal.branch = bra.branch
-group by 
-	sal.order_number,
-	sal.pizza_type,
-	cal.date,
-	sal.quantity,
-	pro.price,
-	bra.branch,
-	bra.manager
+The code I used for the extraction of the data can be seen here: 
+
 7 columns were extracted which included an aggregate column. The columns are: order number, pizza type, date, quantity, price, total sales (price * quantity), branch and manager.
 After extracting the columns into one table, I then imported it into Microsoft Power BI using the get data tab, from database option in order to create visuals to represent the different sales metrics. 
 I did minor data cleaning in power BI using the power query editor. Basically, I changed the data type of some columns to represent the exact nature of each entry in that particular column.
