@@ -56,15 +56,14 @@ After extracting the columns into one table, I then imported it into Microsoft P
 I did minor data cleaning in power BI using the power query editor. Basically, I changed the data type of some columns to represent the exact nature of each entry in that particular column.
 
 # MAJOR FINDINGS
-•	The total sales for the year was $599k with a total of 48k orders to reach this amount.
-•	There were more orders and more sales in Q3 of 2014. Though there were more orders in Q1 compared to Q3 and Q4, Q3 and Q4 generated more sales respectively compared to Q1.
-•	The favorite pizza type is the beef Suya with 3924 orders but the chicken Suya generated more sales.
-•	The California outlet brought in more sales compared to the other outlets.
-
+1.	The total sales for the year was $599k with a total of 48k orders to reach this amount.
+2.	There were more orders and more sales in Q3 of 2014. Though there were more orders in Q1 compared to Q3 and Q4, Q3 and Q4 generated more sales respectively compared to Q1.
+3.	The favorite pizza type is the beef Suya with 3924 orders but the chicken Suya generated more sales.
+4.	The California outlet brought in more sales compared to the other outlets.
 
 # RECOMMENDATIONS
-•	Introducing the three most ordered pizza (Beef Suya, Chicken Suya, and BBQ Philly Steak) to other outlets, to increase sales.
-•	Expanding the California and Oregon outlets menu since they are the major market.
+1.	Introducing the three most ordered pizza (Beef Suya, Chicken Suya, and BBQ Philly Steak) to other outlets, to increase sales.
+2.	Expanding the California and Oregon outlets menu since they are the major market
 
 
 
