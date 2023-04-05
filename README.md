@@ -23,7 +23,7 @@ The code I used for the extraction of the data can be seen here: https://github.
 7 columns were extracted which included an aggregate column. The columns are: order number, pizza type, date, quantity, price, total sales (price * quantity), branch and manager.
 After extracting the columns into one table, I then imported it into Microsoft Power BI using the get data tab, from database option in order to create visuals to represent the different sales metrics. 
 I did minor data cleaning in power BI using the power query editor. Basically, I changed the data type of some columns to represent the exact nature of each entry in that particular column.
-You can view and interact with my dashboard here:
+You can view and interact with my dashboard here: https://github.com/iamMcJohn/Sales-Report-for-2014/commit/2f51d208d4af201436f3aaa5d9a27c4fe17e918a
 
 # MAJOR FINDINGS
 1.	The total sales for the year was $599k with a total of 48k orders to reach this amount.
