@@ -1,4 +1,4 @@
-# Sales-Report-for-2014
+# Sales-Report-For-2014
 
 # INTRODUCTION
 Every organization wants to know how well they crunched numbers in a quarter compared to the previous one. The same goes for their yearly sales too. This will help them know if they meet their sales target in terms of quantity and revenue. Also, it will help them project and position well for the following year.
